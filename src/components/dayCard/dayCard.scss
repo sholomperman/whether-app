@@ -1,0 +1,69 @@
+@import "../../app.scss";    
+    
+.DayCard{
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    -webkit-box-shadow: 0 0 20px -10px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0 20px -10px rgba(0, 0, 0, 0.2);
+    -webkit-transition: -webkit-transform 300ms ease;
+    transition: -webkit-transform 300ms ease;
+    -o-transition: transform 300ms ease;
+    transition: transform 300ms ease;
+    transition: transform 300ms ease, -webkit-transform 300ms ease;
+    -webkit-transform: translateZ(0) scale(1.02) perspective(1000px);
+    transform: translateZ(0) scale(1.02) perspective(1000px);
+    border-radius: 12px;
+    height: 100%;
+    width: 47%;
+    display: flex;
+    cursor: pointer;
+    &:hover{
+    -webkit-transform: scale(1.1) perspective(1500px) rotateY(10deg);
+    transform: scale(1.1) perspective(1500px) rotateY(10deg);
+    }
+    .container {
+        height: 100%;
+        width: 100%;
+        background-color: rgba(0, 213, 255, 0.289);
+        border-radius: 12px;
+        padding: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        .date {
+            display: flex;
+            flex-direction: column;
+            color: $font-color;
+            font-weight: 700;
+            font-size: 30px;
+            span {
+                display: flex;
+                align-items: center;
+                font-size: 16px;
+            }
+        }
+        .whether {
+        display: flex;
+        flex-direction: column;
+        font-size: 60px;
+        color: $font-color;
+        span {
+            font-size: 16px;
+        }
+        .icon {
+            font-size: 50px;
+        }
+        }
+    }
+}
+
+@media screen and (max-width: 450px){
+    .DayCard {
+        height: 40%;
+        width: 100%;
+        &:hover{
+        transform: none;
+    }
+    }
+}

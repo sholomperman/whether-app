@@ -1,0 +1,73 @@
+.Card {
+    height: 450px;
+    width: 650px;
+    background-color: rgba(73, 73, 73, 0.542);
+    border-radius: 12px;
+    display: flex;
+    justify-content: space-between;
+    .right {
+        height: 100%;
+        width: 50%;
+        background-color: none;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        .top {
+            height: 30%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            .left-txt {
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
+                color: white;
+                font-weight: 600;
+                text-align: center;     
+                span {
+                    text-align: center;
+                    font-weight: 100;
+                }
+        }
+        }
+        .mini-cards-container {
+            display: flex;
+            justify-content: inherit;
+            flex-wrap: wrap;
+            width: 100%;
+            .mini-card {
+                width: 20%;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+                align-items: center;
+                cursor: pointer;
+                color: white;
+                border-radius: 12px;
+                margin: 2px;
+                &:hover {
+                    background-color: white;
+                    color: black;
+                }
+            }
+             .mini-card-selected {
+                background-color: white;
+                color: black;
+             }
+        }
+    }
+}
+
+@media screen and (max-width: 450px){
+.Card {
+    flex-direction: column;
+    width: 100%;
+    height: calc(100vh - 10px);
+    margin: 10px;
+    .right {
+        height: 100%;
+        width: 100%;
+    }
+  }
+}

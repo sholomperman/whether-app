@@ -1,0 +1,21 @@
+.ChangeToF {
+    border-radius: 25px;
+    margin: 10px;
+    width: 40px;
+    height: 20px;
+    background-color: rgb(69, 67, 67);
+    display: flex;
+    cursor: pointer;
+    align-self: flex-end;
+    div {
+        height: 100%;
+        width: 50%;
+        background-color: black;
+        color: white;
+        border-radius: 50%;
+        font-size: 12px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+} 
