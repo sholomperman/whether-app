@@ -116,5 +116,10 @@
         &:hover{
         transform: none;
     }
+    .axis {
+      .tick {
+        height: 50%;
+      }
     }
+  }
 }
