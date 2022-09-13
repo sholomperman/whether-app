@@ -19,8 +19,8 @@ const Card = ({ isC, setIsC, daysData, select, setSelect, hoursData }) => {
         daysLong.push(...daysLong)
       }
       newArr.push(daysData?.data[i])
-      newArr[i].weekDay = daysShort[day + i];
-      newArr[i].weekDayLong = daysLong[day + i];
+      newArr[i].weekDay = daysShort[day + i - 1];
+      newArr[i].weekDayLong = daysLong[day + i - 1];
     }
   }
   return (

@@ -59,7 +59,7 @@ const App = () => {
   return (
     <div className="app">
       {
-        daysData !== [] ? <Card hoursData={hoursData} isC={isC} setIsC={setIsC} select={select} setSelect={setSelect} daysData={daysData} /> : <Loading />
+        daysData?.country_code ? <Card hoursData={hoursData} isC={isC} setIsC={setIsC} select={select} setSelect={setSelect} daysData={daysData} /> : <Loading />
       }
     </div>
   );

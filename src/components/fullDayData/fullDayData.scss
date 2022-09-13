@@ -76,6 +76,7 @@
                 border-radius: 50%;
                 background-color: rgba(0, 0, 0, 0.4);
                 outline: $font-color 2px solid;
+                bottom: 10px;
                 cursor: pointer;
                   &:hover {
                     outline: rgba(0, 0, 0, 0.4) 6px solid;
@@ -111,7 +112,7 @@
 
 @media screen and (max-width: 450px){
     .fullDayData {
-        height: 60%;
+        height: 400px;
         width: 100%;
         &:hover{
         transform: none;
