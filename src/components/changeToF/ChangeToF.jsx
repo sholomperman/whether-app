@@ -11,8 +11,8 @@ export const c_f = (num, isC, posicion) => {
 }
 const ChangeToF = ({ isC, setIsC }) => {
     return (
-    <div onClick={()=> setIsC(!isC)} style={{justifyContent: isC ? 'flex-start' : 'flex-end'}} className='ChangeToF'>
-        <div>{isC ? '°C' : '°F'}</div>
+        <div onClick={()=> setIsC(!isC)}  className='ChangeToF'>
+        <div className={isC ? 'isC' : 'isF'}>{isC ? '°C' : '°F'}</div>
     </div>
   )
 }

@@ -7,6 +7,10 @@
     display: flex;
     cursor: pointer;
     align-self: flex-end;
+    position: relative;
+    user-select: none;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
     div {
         height: 100%;
         width: 50%;
@@ -17,5 +21,67 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        position: absolute;
+    }
+    .isC {
+        animation: turnOn 0.2s;
+        transform: translate(-100%);
+        left: 100%;
+    }
+    .isF {
+        animation: turnOff 0.2s;
     }
 } 
+
+@keyframes turnOn {
+    0% {
+    transform: translate(-0%);
+    left: 0%;
+    }
+    20% {
+    transform: translate(-20%);
+    left: 20%;
+    }
+    40% {
+    transform: translate(-40%);
+    left: 40%;
+    }
+    60% {
+    transform: translate(-60%);
+    left: 60%;
+    }
+    80% {
+    transform: translate(-80%);
+    left: 80%;
+    }
+    to {
+    transform: translate(-100%);
+    left: 100%;
+    }
+}
+@keyframes turnOff {
+    0% {
+    transform: translate(0%);
+    right: 0%;
+    }
+    20% {
+    transform: translate(20%);
+    right: 20%;
+    }
+    40% {
+    transform: translate(40%);
+    right: 40%;
+    }
+    60% {
+    transform: translate(60%);
+    right: 60%;
+    }
+    80% {
+    transform: translate(80%);
+    right: 80%;
+    }
+    to {
+    transform: translate(100%);
+    right: 100%;
+    }
+}
