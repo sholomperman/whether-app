@@ -19,7 +19,8 @@ const App = () => {
     setLon(position.coords.longitude)
     setRunOnes(true)
   }
-
+ console.log(lon)
+ console.log(lat)
 
   
   useEffect(() => {
